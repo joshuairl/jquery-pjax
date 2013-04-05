@@ -219,6 +219,34 @@ $(document).on('pjax:complete', function() {
 })
 ```
 
+or a slightly more advanced example
+
+``` javascript
+$(document).on('pjax:beforeSend',function(xhr, settings) {
+  
+});
+
+$(document).on('pjax:send', function(xhr, options) {
+  
+});
+
+$(document).on('pjax:success', function(data, status, xhr, options) {
+  
+});
+
+$(document).on('pjax:complete', function(xhr, textStatus, options) {
+  
+});
+
+$(document).on('pjax:start', function(xhr, options) {
+  
+}
+
+$(document).on('pjax:end', function(xhr, options) {
+  
+});
+```
+
 Another protip: disable the fallback timeout behavior if a spinner is being shown.
 
 ``` javascript

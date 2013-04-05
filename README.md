@@ -234,7 +234,7 @@ $(document).on('pjax:success', function(data, status, xhr, options) {
   
 });
 
-$(document).on('pjax:complete', function(xhr, textStatus, options) {
+$(document).on('pjax:complete', function(xhr, options, textStatus) {
   
 });
 
